@@ -60,7 +60,7 @@
 ;; get that from `lein repl`, so the default value from `project.clj`
 ;; is returned.
 
-(def leiningen-paths-var nil)
+(def ^:private leiningen-paths-var nil)
 
 (defmacro around-initial-paths [& body]
   `(let [original# leiningen-paths-var]
